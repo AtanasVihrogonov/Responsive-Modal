@@ -1,0 +1,10 @@
+# dependansies
+node_modules/
+css/main.css
+dist/
+
+# misc
+.DS_Store
+.vscode
+
+package-lock.json

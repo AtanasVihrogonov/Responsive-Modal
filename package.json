@@ -1,0 +1,17 @@
+{
+  "name": "Jet2",
+  "version": "1.0.0",
+  "description": "Build a mobile first responsive modal with two designs. Mobole view & Desktop/tablet view.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Atanas Vihrogonov",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.0"
+  }
+}
