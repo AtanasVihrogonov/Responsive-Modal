@@ -1,15 +1,42 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* color variables */
+$color-primary: #708090;
+$color-secondary: #FFFFFF;
+$color-content: #777777;
+
+$icon: #008000;
+$btn-cancel-on-hover: #F6F6F6;
+$btn-continue-on-hover: #546677;
+
+*, *:before, *:after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  outline: none;
+}
+
+html {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  background-color: $color-primary;
 }
 
 body {
-  background-color: gray;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  height: 100vh;
 }
 
+button { cursor: pointer; }
 
+hr {
+  margin: 0;
+  width: 100%;
+}
 
-
-
+a { text-align: center; }
 

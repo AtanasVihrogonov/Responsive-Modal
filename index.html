@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Responsive Modal</title>
-</head>
-<body>
-  <h1>Modal</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Responsive Modal</title>
+  </head>
+  <body>
+    <button class="trigger" data-modal-trigger="trigger-1">Modal 1</button>
+    <!-- modal 1 -->
+    <div class="modal" data-modal="trigger-1">
+      <article class="modal__wrapper">
+        <header class="modal__header">
+          <a class="modal__icon"><i class="fas fa-check"></i></a>
+          <h1>Congratulations your jet2 holiday booking has been confirmed</h1>
+        </header>
+        <div class="modal__content">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+            officia itaque ratione placeat minima adipisci, accusamus quasi. Ut
+            dignissimos quaerat, harum tempore aliquid voluptates eaque libero
+            voluptatibus ipsam accusamus repudiandae!
+          </p>
+        </div>
+        <hr />
+        <footer class="modal__footer">
+          <a class="modal__button close">Cancel</a>
+          <a class="modal__button" href="#">Continue</a>
+        </footer>
+      </article>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>

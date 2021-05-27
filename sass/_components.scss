@@ -1,3 +1,135 @@
+/* ===== Trigger button style ===== */
+.trigger {
+  margin: 0 0.75rem;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12),
+    0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24);
+  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+.trigger i {
+  margin-right: 0.3125rem;
+}
+.trigger:hover {
+  box-shadow: 0 0.875rem 1.75rem rgba(0, 0, 0, 0.25),
+    0 0.625rem 0.625rem rgba(0, 0, 0, 0.22);
+}
 
+/* ===== Mobile styles ===== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0vh;
+  background-color: transparent;
+  overflow: hidden;
+  transition: background-color 0.25s ease;
+  z-index: 9999;
+  &.open {
+    position: fixed;
+    /* width: 100%; */
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.25s;
+    & > .modal__wrapper { transform: scale(1); }
+  }
 
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* width: 100%; */
+    margin: 0;
+    background-color: white;
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.5);
+    transform: scale(0);
+    transition: transform 0.25s;
+    transition-delay: 0.15s;
+  }
 
+  &__header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+    & h1 { margin: 0 0 0 3rem; }
+  }
+  &__icon {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    background-color: $icon;
+    border-radius: 50%;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    & i {
+      margin: 0 auto;
+      color: $color-secondary;
+    }
+  }
+
+  &__content {
+    padding: 0 2rem;
+    p {
+      letter-spacing: 1px;
+      line-height: 1.75;
+      color: $color-content;
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+  &__button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 0.625rem 3.25rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    &:first-child {
+      border: 2px solid $color-content;
+      color: $color-content;
+      background-color: $color-secondary;
+      margin-bottom: 0.5rem;
+      &:hover { background-color: $btn-cancel-on-hover; }
+    }
+    &:last-child {
+      background-color: $color-primary;
+      color: $color-secondary;
+      &:hover { background-color: $btn-continue-on-hover; }
+    }
+  }
+}
+
+/* ===== Small tablet styles ===== */
+@media screen and (min-width: 620px) {
+}
+/* ===== Large tablet and laptop styles ===== */
+@media screen and (min-width: 960px) {
+}
+/* ===== Desktop styles ===== */
+@media screen and (min-width: 1200px) {
+}
