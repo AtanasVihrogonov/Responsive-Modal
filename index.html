@@ -15,8 +15,33 @@
   </head>
   <body>
     <button class="trigger" data-modal-trigger="trigger-1">Modal 1</button>
+    <button class="trigger" data-modal-trigger="trigger-2">Modal 2</button>
+
     <!-- modal 1 -->
     <div class="modal" data-modal="trigger-1">
+      <article class="modal__wrapper">
+        <header class="modal__header">
+          <a class="modal__icon"><i class="fas fa-check"></i></a>
+          <h1>Congratulations your jet2 holiday booking has been confirmed</h1>
+        </header>
+        <div class="modal__content">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+            officia itaque ratione placeat minima adipisci, accusamus quasi. Ut
+            dignissimos quaerat, harum tempore aliquid voluptates eaque libero
+            voluptatibus ipsam accusamus repudiandae!
+          </p>
+        </div>
+        <hr />
+        <footer class="modal__footer">
+          <a class="modal__button close">Cancel</a>
+          <a class="modal__button" href="#">Continue</a>
+        </footer>
+      </article>
+    </div>
+
+    <!-- modal 2 -->
+    <div class="modal" data-modal="trigger-2">
       <article class="modal__wrapper">
         <header class="modal__header">
           <a class="modal__icon"><i class="fas fa-check"></i></a>

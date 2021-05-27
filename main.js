@@ -20,3 +20,4 @@ function modalEvent(button) {
 		modal.classList.toggle('open');
 	});
 }
+
